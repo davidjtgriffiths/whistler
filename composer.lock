@@ -4,8 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "821b8b94a2903b086738bedcd49f1d88",
+    "content-hash": "d6373205f4e908583452847ded210cee",
     "packages": [
+        {
+            "name": "alcohol/iso4217",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alcohol/iso4217.git",
+                "reference": "422890279c805e98dcea012f3dbbc184ac8afbe5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alcohol/iso4217/zipball/422890279c805e98dcea012f3dbbc184ac8afbe5",
+                "reference": "422890279c805e98dcea012f3dbbc184ac8afbe5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Alcohol\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com"
+                }
+            ],
+            "description": "ISO 4217 PHP Library",
+            "homepage": "http://alcohol.github.io/iso4217/",
+            "keywords": [
+                "4217",
+                "ISO 4217",
+                "currencies",
+                "iso",
+                "library"
+            ],
+            "support": {
+                "issues": "https://github.com/alcohol/iso4217/issues",
+                "source": "https://github.com/alcohol/iso4217"
+            },
+            "time": "2023-02-28T12:25:39+00:00"
+        },
         {
             "name": "api-platform/core",
             "version": "v3.1.12",
@@ -224,6 +280,72 @@
                 "source": "https://github.com/Behat/Transliterator/tree/v1.5.0"
             },
             "time": "2022-03-30T09:27:43+00:00"
+        },
+        {
+            "name": "clue/stream-filter",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clue/stream-filter.git",
+                "reference": "d6169430c7731d8509da7aecd0af756a5747b78e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clue/stream-filter/zipball/d6169430c7731d8509da7aecd0af756a5747b78e",
+                "reference": "d6169430c7731d8509da7aecd0af756a5747b78e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "Clue\\StreamFilter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering"
+                }
+            ],
+            "description": "A simple and modern approach to stream filtering in PHP",
+            "homepage": "https://github.com/clue/php-stream-filter",
+            "keywords": [
+                "bucket brigade",
+                "callback",
+                "filter",
+                "php_user_filter",
+                "stream",
+                "stream_filter_append",
+                "stream_filter_register"
+            ],
+            "support": {
+                "issues": "https://github.com/clue/stream-filter/issues",
+                "source": "https://github.com/clue/stream-filter/tree/v1.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://clue.engineering/support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-21T13:15:14+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1903,6 +2025,267 @@
             "time": "2023-07-08T20:38:42+00:00"
         },
         {
+            "name": "league/uri",
+            "version": "6.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri.git",
+                "reference": "a700b4656e4c54371b799ac61e300ab25a2d1d39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri/zipball/a700b4656e4c54371b799ac61e300ab25a2d1d39",
+                "reference": "a700b4656e4c54371b799ac61e300ab25a2d1d39",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "league/uri-interfaces": "^2.3",
+                "php": "^8.1",
+                "psr/http-message": "^1.0.1"
+            },
+            "conflict": {
+                "league/uri-schemes": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.9.5",
+                "nyholm/psr7": "^1.5.1",
+                "php-http/psr7-integration-tests": "^1.1.1",
+                "phpbench/phpbench": "^1.2.6",
+                "phpstan/phpstan": "^1.8.5",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.1.1",
+                "phpstan/phpstan-strict-rules": "^1.4.3",
+                "phpunit/phpunit": "^9.5.24",
+                "psr/http-factory": "^1.0.1"
+            },
+            "suggest": {
+                "ext-fileinfo": "Needed to create Data URI from a filepath",
+                "ext-intl": "Needed to improve host validation",
+                "league/uri-components": "Needed to easily manipulate URI objects",
+                "psr/http-factory": "Needed to use the URI factory"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Uri\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://nyamsprod.com"
+                }
+            ],
+            "description": "URI manipulation library",
+            "homepage": "https://uri.thephpleague.com",
+            "keywords": [
+                "data-uri",
+                "file-uri",
+                "ftp",
+                "hostname",
+                "http",
+                "https",
+                "middleware",
+                "parse_str",
+                "parse_url",
+                "psr-7",
+                "query-string",
+                "querystring",
+                "rfc3986",
+                "rfc3987",
+                "rfc6570",
+                "uri",
+                "uri-template",
+                "url",
+                "ws"
+            ],
+            "support": {
+                "docs": "https://uri.thephpleague.com",
+                "forum": "https://thephpleague.slack.com",
+                "issues": "https://github.com/thephpleague/uri/issues",
+                "source": "https://github.com/thephpleague/uri/tree/6.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-13T19:58:47+00:00"
+        },
+        {
+            "name": "league/uri-components",
+            "version": "2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri-components.git",
+                "reference": "06f49e726a7fd06063e80f5f8b045fb9128e6c43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri-components/zipball/06f49e726a7fd06063e80f5f8b045fb9128e6c43",
+                "reference": "06f49e726a7fd06063e80f5f8b045fb9128e6c43",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "league/uri-interfaces": "^2.3",
+                "php": "^7.4 || ^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.8.0",
+                "guzzlehttp/psr7": "^2.2",
+                "laminas/laminas-diactoros": "^2.11.0",
+                "league/uri": "^6.0",
+                "phpstan/phpstan": "^1.7",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.1",
+                "phpstan/phpstan-strict-rules": "^1.2",
+                "phpunit/phpunit": "^9.5.20"
+            },
+            "suggest": {
+                "ext-fileinfo": "Needed to create Data URI from a filepath",
+                "ext-gmp": "to improve handle IPV4 parsing",
+                "ext-intl": "to handle IDN host",
+                "jeremykendall/php-domain-parser": "Public Suffix and Top Level Domain parsing implemented in PHP",
+                "league/uri": "to allow manipulating URI objects",
+                "php-64bit": "to improve handle IPV4 parsing",
+                "psr/http-message-implementation": "to allow manipulating PSR-7 Uri objects"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Uri\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://nyamsprod.com"
+                }
+            ],
+            "description": "URI components manipulation library",
+            "homepage": "http://uri.thephpleague.com",
+            "keywords": [
+                "authority",
+                "components",
+                "fragment",
+                "host",
+                "path",
+                "port",
+                "query",
+                "rfc3986",
+                "scheme",
+                "uri",
+                "url",
+                "userinfo"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/uri-components/issues",
+                "source": "https://github.com/thephpleague/uri-components/tree/2.4.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-05-26T05:50:46+00:00"
+        },
+        {
+            "name": "league/uri-interfaces",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri-interfaces.git",
+                "reference": "00e7e2943f76d8cb50c7dfdc2f6dee356e15e383"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/00e7e2943f76d8cb50c7dfdc2f6dee356e15e383",
+                "reference": "00e7e2943f76d8cb50c7dfdc2f6dee356e15e383",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.19",
+                "phpstan/phpstan": "^0.12.90",
+                "phpstan/phpstan-phpunit": "^0.12.19",
+                "phpstan/phpstan-strict-rules": "^0.12.9",
+                "phpunit/phpunit": "^8.5.15 || ^9.5"
+            },
+            "suggest": {
+                "ext-intl": "to use the IDNA feature",
+                "symfony/intl": "to use the IDNA feature via Symfony Polyfill"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Uri\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://nyamsprod.com"
+                }
+            ],
+            "description": "Common interface for URI representation",
+            "homepage": "http://github.com/thephpleague/uri-interfaces",
+            "keywords": [
+                "rfc3986",
+                "rfc3987",
+                "uri",
+                "url"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/uri-interfaces/issues",
+                "source": "https://github.com/thephpleague/uri-interfaces/tree/2.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-28T04:27:21+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "3.4.0",
             "source": {
@@ -2064,6 +2447,274 @@
                 "source": "https://github.com/nelmio/NelmioCorsBundle/tree/2.3.1"
             },
             "time": "2023-02-16T08:49:29+00:00"
+        },
+        {
+            "name": "payum/iso4217",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Payum/iso4217.git",
+                "reference": "faafdd2c5e799c673d7aa576aaf26fa2fb631014"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Payum/iso4217/zipball/faafdd2c5e799c673d7aa576aaf26fa2fb631014",
+                "reference": "faafdd2c5e799c673d7aa576aaf26fa2fb631014",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Payum\\ISO4217\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com"
+                },
+                {
+                    "name": "Kotlyar Maksim",
+                    "email": "kotlyar.maksim@gmail.com"
+                },
+                {
+                    "name": "Payum project",
+                    "homepage": "http://payum.org/"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/Payum/Payum/contributors"
+                }
+            ],
+            "description": "ISO 4217 PHP Library",
+            "homepage": "https://payum.forma-pro.com/",
+            "keywords": [
+                "4217",
+                "ISO 4217",
+                "currencies",
+                "iso",
+                "library"
+            ],
+            "support": {
+                "issues": "https://github.com/payum/iso4217/issues",
+                "source": "https://github.com/payum/iso4217"
+            },
+            "time": "2022-02-27T10:14:23+00:00"
+        },
+        {
+            "name": "payum/payum",
+            "version": "1.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Payum/Payum.git",
+                "reference": "b49bc73316ae8416b7bf39e506be2144704a0e70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Payum/Payum/zipball/b49bc73316ae8416b7bf39e506be2144704a0e70",
+                "reference": "b49bc73316ae8416b7bf39e506be2144704a0e70",
+                "shasum": ""
+            },
+            "require": {
+                "alcohol/iso4217": "^3.1 || ^4.0",
+                "league/uri": "^6.4",
+                "league/uri-components": "^2.2",
+                "payum/iso4217": "~1.0",
+                "php": "^7.2 || ^8.0",
+                "php-http/client-implementation": "^1.0",
+                "php-http/message": "^1.0",
+                "twig/twig": "^1.34 || ^2.4 || ^3.0"
+            },
+            "conflict": {
+                "league/uri-components": "<1.7.1"
+            },
+            "replace": {
+                "payum/authorize-net-aim": "self.version",
+                "payum/be2bill": "self.version",
+                "payum/core": "^1",
+                "payum/klarna-checkout": "self.version",
+                "payum/klarna-invoice": "self.version",
+                "payum/offline": "self.version",
+                "payum/payex": "self.version",
+                "payum/paypal-express-checkout-nvp": "self.version",
+                "payum/paypal-ipn": "self.version",
+                "payum/paypal-pro-checkout-nvp": "self.version",
+                "payum/paypal-rest": "self.version",
+                "payum/sofort": "self.version",
+                "payum/stripe": "self.version"
+            },
+            "require-dev": {
+                "authorizenet/authorizenet": "^1.8.1",
+                "defuse/php-encryption": "^2",
+                "doctrine/dbal": "^2.7 || ^3.0",
+                "doctrine/orm": "^2.5",
+                "doctrine/persistence": "^1.3.3 || ^2.0",
+                "ext-curl": "*",
+                "ext-pdo_sqlite": "*",
+                "ext-soap": "*",
+                "fp/klarna-invoice": "0.1.*",
+                "klarna/checkout": "^1.1 || ^2.0",
+                "laminas/laminas-db": "^2.0",
+                "omnipay/common": "^3.0",
+                "omnipay/dummy": "^3.0",
+                "paypal/rest-api-sdk-php": "~1.0",
+                "payum/omnipay-v3-bridge": "^1.0",
+                "php-http/guzzle6-adapter": "^1.1.1",
+                "phpunit/phpunit": "^7.5 || ^8.5",
+                "propel/propel1": "~1.7",
+                "psr/log": "~1.0",
+                "sofort/sofortlib-php": "^3.0",
+                "stripe/stripe-php": "^7.0",
+                "symfony/cache": "^4.4 || ^5.0 || ^6.0",
+                "symfony/dependency-injection": "^4.4 || ^5.0 || ^6.0",
+                "symfony/form": "^4.4 || ^5.0 || ^6.0",
+                "symfony/http-foundation": "^4.4 || ^5.0",
+                "symfony/http-kernel": "^4.4 || ^5.0 || ^6.0",
+                "symfony/phpunit-bridge": "^4.4 || ^5.0",
+                "symfony/routing": "^4.4 || ^5.0 || ^6.0",
+                "symfony/templating": "^4.4 || ^5.0 || ^6.0",
+                "symfony/validator": "^4.4 || ^5.0 || ^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Payum\\": "src/Payum/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kotlyar Maksim",
+                    "email": "kotlyar.maksim@gmail.com"
+                },
+                {
+                    "name": "Payum project",
+                    "homepage": "https://payum.forma-pro.com/"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/Payum/Payum/contributors"
+                }
+            ],
+            "description": "One million downloads of Payum already! Payum offers everything you need to work with payments. Friendly for all PHP frameworks (Symfony, Laravel, Zend, Yii, Silex). Check more visiting site.",
+            "homepage": "https://payum.forma-pro.com",
+            "keywords": [
+                "authorize.net",
+                "be2bill",
+                "instant payment notification",
+                "ipn",
+                "jms payment",
+                "payex",
+                "payment",
+                "payout",
+                "paypal",
+                "paypal digital goods",
+                "paypal express",
+                "paypal pro",
+                "paypal rest",
+                "recurring payment",
+                "stripe",
+                "stripe checkout",
+                "stripe.js",
+                "withdrawal"
+            ],
+            "support": {
+                "issues": "https://github.com/Payum/Payum/issues",
+                "source": "https://github.com/Payum/Payum/tree/1.7.3"
+            },
+            "time": "2022-07-04T09:47:14+00:00"
+        },
+        {
+            "name": "php-http/message",
+            "version": "1.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/message.git",
+                "reference": "47a14338bf4ebd67d317bf1144253d7db4ab55fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/message/zipball/47a14338bf4ebd67d317bf1144253d7db4ab55fd",
+                "reference": "47a14338bf4ebd67d317bf1144253d7db4ab55fd",
+                "shasum": ""
+            },
+            "require": {
+                "clue/stream-filter": "^1.5",
+                "php": "^7.2 || ^8.0",
+                "psr/http-message": "^1.1 || ^2.0"
+            },
+            "provide": {
+                "php-http/message-factory-implementation": "1.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.6",
+                "ext-zlib": "*",
+                "guzzlehttp/psr7": "^1.0 || ^2.0",
+                "laminas/laminas-diactoros": "^2.0 || ^3.0",
+                "php-http/message-factory": "^1.0.2",
+                "phpspec/phpspec": "^5.1 || ^6.3 || ^7.1",
+                "slim/slim": "^3.0"
+            },
+            "suggest": {
+                "ext-zlib": "Used with compressor/decompressor streams",
+                "guzzlehttp/psr7": "Used with Guzzle PSR-7 Factories",
+                "laminas/laminas-diactoros": "Used with Diactoros Factories",
+                "slim/slim": "Used with Slim Framework PSR-7 implementation"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/filters.php"
+                ],
+                "psr-4": {
+                    "Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "HTTP Message related tools",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "http",
+                "message",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/message/issues",
+                "source": "https://github.com/php-http/message/tree/1.16.0"
+            },
+            "time": "2023-05-17T06:43:38+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2479,6 +3130,59 @@
                 "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
             },
             "time": "2019-01-08T18:20:26+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
+            },
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/link",
